@@ -1,0 +1,18 @@
+{
+  "name": "nightwatch-demo",
+  "version": "0.0.1",
+  "description": "E2E test demo using https://nightwatchjs.org",
+  "repository": "https://github.com/jimCresswell/nightwatch-demo.git",
+  "author": "jimCresswell <jim.cresswell@gmail.com>",
+  "scripts": {
+    "test:pos": "./node_modules/.bin/nightwatch --env pos_chrome",
+    "test:win": "./node_modules/.bin/nightwatch --env win_chrome"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "eslint": "^6.6.0",
+    "nightwatch": "^1.2.4"
+  }
+}

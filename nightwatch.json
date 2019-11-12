@@ -1,0 +1,26 @@
+{
+  "src_folders": ["tests"],
+  "webdriver": {
+    "start_process": true
+  },
+  "test_settings": {
+    "win_chrome": {
+      "webdriver": {
+        "server_path": "node_modules\\.bin\\chromedriver.cmd",
+        "port": 9515
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    },
+    "pos_chrome": {
+      "webdriver": {
+        "server_path": "node_modules/.bin/chromedriver",
+        "port": 9515
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    }
+  }
+}
