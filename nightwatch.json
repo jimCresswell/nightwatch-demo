@@ -1,5 +1,6 @@
 {
-  "src_folders": ["tests"],
+  "src_folders": ["test/tests"],
+  "page_objects_path": ["test/pages"],
   "webdriver": {
     "start_process": true
   },

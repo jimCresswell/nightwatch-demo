@@ -17,13 +17,18 @@ module.exports = {
     console.log("After a test.");
   },
   'Demo test Google' : function (browser) {
-    browser
-      .url('https://www.google.com')
-      .waitForElementVisible('body')
-      .setValue('input[type=text]', 'nightwatch')
+    var google = browser.page.google();
+
+    google
+      .navigate()
+      .assert.title('Google')
+      .assert.visible('@searchBar')
+      .setValue('@searchBar', 'nightwatch')
       .waitForElementVisible('input[name=btnK]')
-      .click('input[name=btnK]')
-      .pause(1000)
+      .click('@submit');
+
+    browser
+      .waitForElementVisible('#main')
       .assert.containsText('#main', 'Night Watch')
       .end();
   }
