@@ -24,8 +24,7 @@ module.exports = {
       .assert.title('Google')
       .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
-      .waitForElementVisible('input[name=btnK]')
-      .click('@submit');
+      .submit();
 
     browser
       .waitForElementVisible('#main')
